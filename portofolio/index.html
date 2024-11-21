@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<meta name="theme-color" content="#ffffff" />
+	<meta http-equiv="Content-Language" content="en" />
+	<meta name="author" content="Jhonatan" />
+	<meta name="description" content="Jhonatan's portfolio showcasing projects and skills in web development, software engineering, and more." />
+	<meta name="keywords" content="Jhonatan, portfolio, web development, software engineering, projects, skills, contact us" />
+	<link rel="manifest" href="/manifest.json">
+
+	<title>Jhonatan Moses Gouijn PORTOFOLIO</title>
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="styles/style.css" />
+	<link rel="stylesheet" href="styles/nav.css" />
+	<link rel="stylesheet" href="styles/home.css" />
+	<link rel="stylesheet" href="styles/about.css">
+	<link rel="stylesheet" href="styles/skills.css">
+	<link rel="stylesheet" href="styles/scrollItems.css">
+	<link rel="stylesheet" href="styles/experience.css">
+	<link rel="stylesheet" href="styles/project.css">
+	<link rel="stylesheet" href="styles/footer.css">
+	<link rel="stylesheet" href="styles/responsive.css" />
+
+	<meta name="google-site-verification" content="DCYDep9j5s7cyTxOdQrS3FYiHIfOwh1Laa-tgcAdxR8" />
+	<script>
+		// Check if the current URL is the live website
+		if (window.location.hostname === 'Jhonatan.in') {
+		  // Google tag (gtag.js)
+		  const script = document.createElement("script");
+		  script.src = "https://www.googletagmanager.com/gtag/js?id=G-B7Q8NCFNR6";
+		  script.async = true;
+		  document.head.appendChild(script);
+  
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag() {
+			dataLayer.push(arguments);
+		  }
+		  gtag("js", new Date());
+		  gtag("config", "G-2N872D2WD8");
+		}
+	</script>
+</head>
+
+<body>
+	<noscript>Your browser doesn't support JavaScript, this site is best viewed when browser support JavaScript</noscript>
+	<!-- Navigation Bar -->
+	<header class="nav">
+		<nav>
+			<section class="m-nav" >
+				<div class="m-justify-center m-full-width" >
+					<button class="hamburger-menu-icon m-flex-col m-justify-center">
+						<div class="hamburger-icon-bar"></div>
+						<div class="hamburger-icon-bar"></div>
+						<div class="hamburger-icon-bar"></div>
+					</button>
+					<a href="#" class="color-black" id="logo">Portfolio</a>
+				</div>
+
+				<div class="overlay m-nav-bar-overlay"></div>
+				<section id="mNavBar" class="m-nav-bar m-flex-col">
+					<div class="m-justify-center m-full-width" >
+						<button id="navbarCloseIcon" class="navbar-close-icon">
+							&times;
+						</button>
+						<a href="#" class="color-black" id="logo">Portfolio</a>
+					</div>
+
+					<ul class="links m-flex-col">
+						<li class="nav-links"><a data-scroll-offset="true" href="#about">About</a></li>
+						<li class="nav-links"><a href="#skills">Skills</a></li>
+						<li class="nav-links"><a data-scroll-offset="true" href="#experience">Experience</a></li>
+						<li class="nav-links"><a href="#project">Project</a></li>
+						<li class="nav-links"><a data-scroll-offset="true" href="#contact">Contact</a></li>
+					</ul>
+				</section>
+			</section>
+			<section class="d-nav">
+				<a href="#" class="color-black" id="logo">Portfolio</a>
+				<ul class="links">
+					<li class="nav-links"><a data-scroll-offset="true" href="#about">About</a></li>
+					<li class="nav-links"><a href="#skills">Skills</a></li>
+					<li class="nav-links"><a data-scroll-offset="true" href="#experience">Experience</a></li>
+					<li class="nav-links"><a href="#project">Project</a></li>
+					<li class="nav-links"><a data-scroll-offset="true" href="#contact">Contact</a></li>
+				</ul>
+			</section>
+		</nav>
+	</header>
+
+	<main>
+		<!-- Home section of page -->
+		<section id="home" class="home">
+			<canvas class="overlay" id="fireworksHome"></canvas>
+			<div class="content">
+				<div class="text-content">
+					<article>
+						<h1>
+							I'm Jhonatan Moses Gouijn<br />
+							Web Developer
+						</h1>
+						<button class="know-more-about-me right-arrow-hover-effect" onclick="go('#about', true)">
+							Know more about me<span class="right-arrow-icon-placeholder-home"></span>
+						</button>
+					</article>
+				</div>
+				<div class="profile">
+					<picture>
+						<img class="card"
+							src="scripts/poto formal.jpg"
+							alt="Jhonatan Portfolio Image" />
+					</picture>
+				</div>
+			</div>
+		</section>
+	
+		<!-- About section  -->
+		<section id="about" class="about card">
+			<div class="overlay"></div>
+			<div class="content">
+				<div class="profile">
+					<picture>
+						<img class="card"
+							src="scripts/WhatsApp Image 2024-11-21 at 21.20.24_4f30310c.jpg"
+							loading="lazy" />
+					</picture>
+				</div>
+				<article>
+					<div class="text-content">
+						<h2>About</h2>
+						<p>Hello, my name is Jhonatan Moses Gouijn. I am a student majoring in Software Engineering (RPL).
+							 I have a great interest in the world of technology, especially in developing software, applications and systems that can provide practical solutions for various needs.</p>
+						
+						
+						<hr>
+						<p>
+							"I have a passion for photography and editing. For me, photography is a way to capture the beauty in every moment,
+							 while editing is the art of perfecting the story behind the image. By combining the two, I try to create visual works that are not only beautiful, but also meaningful. "
+						</p>
+						
+						<div class="m-justify-center" >
+							<a class="styled-btn color-black" href="Blue Light Blue Color Blocks Flight Attendant CV_20241121_202125_0000.pdf"
+								download="Jhonatan" target="_blank">
+								OPEN MY CV
+							</a>
+						</div>
+					</div>
+				</article>
+			</div>
+		</section>
+	
+		<!-- Skills section  -->
+		<section id="skills" class="skills">
+			<div class="overlay"></div>
+			<div class="content card">
+				<div class="text-content">
+					<h2>  My Skills </h2>
+					<div class="skill-category-container" >
+						<div class="skill-category">
+							<p class="sub-heading">Languages, Libraries & Frameworks</p>
+							<ul>
+								<li>
+									<a class="right-arrow-hover-effect" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
+										<img
+											loading="lazy"
+											decoding="async"
+											width="24px"
+											src="https://aakashdinkarh.github.io/static_assets/images/svgs/html.svg"
+											alt="html"
+										/>
+										HTML<span class="right-arrow-icon-placeholder-skill"></span>
+									</a>
+								</li>
+								<li>
+									<a class="right-arrow-hover-effect" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+										<img
+											loading="lazy"
+											decoding="async"
+											width="24px"
+											src="https://aakashdinkarh.github.io/static_assets/images/svgs/css.svg"
+											alt="css"
+										/>
+										CSS<span class="right-arrow-icon-placeholder-skill"></span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="skill-category">
+							<p class="sub-heading">Tools & Best Practices</p>
+							<ul>
+								<li>
+									<a class="right-arrow-hover-effect" href="https://docs.github.com/en/get-started/start-your-journey/about-github-and-git" target="_blank">
+										<img
+											loading="lazy"
+											decoding="async"
+											width="24px"
+											src="https://aakashdinkarh.github.io/static_assets/images/svgs/github.svg"
+											alt="git & gitHub"
+										/>
+										Git & GitHub<span class="right-arrow-icon-placeholder-skill"></span>
+									</a>
+								</li>
+								<li>
+									<a class="right-arrow-hover-effect" href="https://code.visualstudio.com/" target="_blank">
+										<img
+											loading="lazy"
+											decoding="async"
+											width="24px"
+											src="https://aakashdinkarh.github.io/static_assets/images/svgs/vs-code.svg"
+											alt="vs code"
+										/>
+										VS Code<span class="right-arrow-icon-placeholder-skill"></span>
+									</a>
+								</li>
+								<li>
+									<a class="right-arrow-hover-effect" href="https://www.cursor.com/" target="_blank">
+										<img
+											loading="lazy"
+											decoding="async"
+											width="24px"
+											src="https://aakashdinkarh.github.io/static_assets/images/website-logo/cursor.webp"
+											alt="cursor"
+											class="cursor"
+										/>
+										Cursor<span class="right-arrow-icon-placeholder-skill"></span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+		<!-- Experience section  -->
+		<section id="experience" class="experience card">
+			<div class="overlay"></div>
+			<div class="content text-content">
+				<h2>Experience<span id="exp-time-calc">2y 1m 14d</span></h2>
+				<article>
+					<div class="experience-card">
+						<p class="sub-heading m-flex-col">Software Engineer &#x2022; Meesho <i>(Oct '23 - Present)</i></p>
+						<p>
+							At Meesho, I focus on optimizing webpage performance to enhance user experience. My role involves collaborating with various teams to address performance bottlenecks and implement improvements. By working closely with cross-functional teams, I've contributed to streamlined processes and enhanced the overall efficiency of our web platforms.
+						</p>
+						<p class="sub-heading mb-5" >Tech-skills I honed</p>
+						<p class="proficiencies mt-5" >ReactJS, NextJS, TypeScript, Redux, NodeJS, ExpressJS, Web Performance, SEO, Styled Components</p>
+					</div>
+				</article>
+				<article>
+					<div class="experience-card">
+						<p class="sub-heading m-flex-col">Software Engineer &#x2022; Cogoport <i>(Jul '22 - Sep '23)</i></p>
+						<p>
+							At Cogoport, I developed features such as the Shipment Rollover Flow, which automated container transfers, saving over 30 shipments per month. I also created a User Off-board process, improving efficiency by 60% and role-specific dashboards, boosting work efficiency by 40%. Additionally, I provided technical solutions for bugs and improved layouts for better performance.
+						</p>
+						<p class="sub-heading mb-5" >Tech-skills I honed</p>
+						<p class="proficiencies mt-5" >ReactJS, NextJS, Redux, React Hook Form, Styled Components</p>
+					</div>
+				</article>
+				<article>
+					<div class="experience-card">
+						<p class="sub-heading m-flex-col">Web Developer &#x2022; Web Student <i>(Jun '21 - Aug '21)</i></p>
+						<p>
+							I interned as a Front-end Developer at Web Student, completing 7 projects as a Team Leader. I enhanced website designs and functionality, incorporating various animations and APIs. My leadership skills were recognized with the <b>Best-Intern</b> award and an <b>appreciation certificate</b> for the team.
+						</p>
+						<p class="sub-heading mb-5" >Tech-skills I honed</p>
+						<p class="proficiencies mt-5" >HTML, CSS, JavaScript, Web Storage APIs, Responsive Web Designs</p>
+					</div>
+				</article>
+			</div>
+		</section>
+	
+		<!-- Project section  -->
+		<section id="project" class="projects">
+			<div class="overlay"></div>
+			<div class="content card">
+				<div class="text-content">
+					<h2>Projects</h2>
+					<div class="project-details-container" >
+							</div>
+						</article>
+						<article>
+							<div class="project-details project-image card view-all">
+								<p class="sub-heading">
+									<a href="https://aakashdinkar.in/calculator/" target="_blank" class="right-arrow-hover-effect">
+										View All<span class="right-arrow-icon-placeholder-project"></span>
+									</a>
+								</p>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Bottom of the page -->
+		<section id="contact" class="contact card">
+			<canvas class="overlay" id="fireworksFooter"></canvas>
+			<div class="content">
+				<article>
+					<div class="text-content">
+						<h2>Contact Me</h2>
+						<p class="sub-heading" >For any queries, reach out using the details below:</p>
+						<div class="text-content">
+							<ul class="contact-details">
+								<li class="contact-item">
+									<a href="https://wa.me/+62813967731070">
+										<img loading="lazy" decoding="async" width="20px" src="https://aakashdinkarh.github.io/static_assets/images/svgs/mobile.svg" alt="mobile/tel">
+										+62-81396731070
+									</a>
+								</li>
+								<li class="contact-item">
+									<a href="mailto:jhonses46@gmail.com.com" target="_blank">
+										<img loading="lazy" decoding="async" width="20px" src="https://aakashdinkarh.github.io/static_assets/images/svgs/mail.svg" alt="mail">
+										jhonses46@gmail.com
+									</a>
+								</li>
+								<li class="contact-item">
+									<a href="https://www.instagram.com/jho_ses_/profilecard/?igsh=MWdjbmR6cDc5N29pbQ==" target="_blank">
+										<img loading="lazy" decoding="async" width="20px" src="https://aakashdinkarh.github.io/static_assets/images/svgs/instagram.svg" alt="instagram">
+										Instagram
+									</a>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</article>
+
+				<div class="profile">
+					<form onsubmit="return false;">
+						<div class="overlay form-overlay"></div>
+						<input type="text" placeholder="Your Name" name="user_name" required />
+						<input type="email" placeholder="Your Email" name="user_email" required />
+						<textarea placeholder="Your Feedback/Message/Query" cols="30" rows="5" name="user_message" required></textarea>
+						<div class="m-justify-center">
+							<button class="styled-btn submit-btn" type="submit">
+								<span class="button-text color-black">Send Me</span>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	
+
+	<!-- Go to top button -->
+	<a id="top-btn" class="color-black" title="Go to top" href="#">
+		<span class="upward-icon-placeholder"></span>
+		<span class="upward-icon-placeholder"></span>
+	</a>
+
+	<!-- lower priority script files -->
+	<script src="scripts/script.js"></script>
+	<script src="scripts/utils.js"></script>
+	<script src="scripts/svgHelpers.js"></script>
+	<script src="scripts/fireworks-gravity.js"></script>
+	<script src="scripts/dynamicallyLoadChunks.js" ></script>
+</body>
+
+</html>

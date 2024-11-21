@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="theme-color" content="#ffffff" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta name="author" content="Jhonatan" />
+    <meta name="description" content="The page you are looking for does not exist." />
+    <meta name="keywords" content="Jhonatan, Not Found, does not exist" />
+
+		<title>404 Not Found</title>
+		<script type="text/javascript">
+      var reactProjectsWithRouter = ['the-movie-db', 'music-player-project', 'Tic-Tac-Toe-Game', 'todo-react-app'];
+      var pathSegmentsToKeep = 1;
+
+      var l = window.location;
+      if (reactProjectsWithRouter.includes(l.pathname.split('/')[1])) {
+        l.replace(
+          l.protocol +
+            "//" +
+            l.hostname +
+            (l.port ? ":" + l.port : "") +
+            l.pathname
+              .split("/")
+              .slice(0, 1 + pathSegmentsToKeep)
+              .join("/") +
+            "/?/" +
+            l.pathname
+              .slice(1)
+              .split("/")
+              .slice(pathSegmentsToKeep)
+              .join("/") +
+            l.hash
+        );
+      }
+		</script>
+
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: rgb(22 24 29);
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      h1 {
+        font-size: 3em;
+        color: rgb(246 139 33);
+      }
+      p {
+        font-size: 1.2em;
+        color: #dcdcdc;
+      }
+      a {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: rgb(246 139 33);
+        color: #000;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      a:hover {
+        background-color: rgb(196, 111, 25);
+      }
+    </style>
+	</head>
+	<body>
+    <h1>404 Not Found</h1>
+    <p>The page you are looking for doesn't exist.</p>
+    <a href="https://Jhonatan.in">Go back to Homepage</a>
+
+  </body>
+</html>
