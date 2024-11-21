@@ -1,1 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <meta name="theme-color" content="#ffffff" />
+        <meta http-equiv="Content-Language" content="en" />
+        <meta name="author" content="Aakash Dinkar" />
+        <meta name="description" content="A simple and intuitive calculator built with HTML, CSS, and JavaScript. Perform basic arithmetic operations easily and efficiently." />
+        <meta name="keywords" content="Aakash Dinkar, calculator, web calculator, HTML CSS JavaScript, arithmetic operations, simple calculator, coding projects, front-end development" />
+        
+        <!-- Favicon for browsers -->
+        <link rel="icon" href="https://aakashdinkarh.github.io/static_assets/images/portfolio/site-icon/site-icon.ico" type="image/x-icon">
+        <!-- Favicon for standard desktop browsers (16x16, 32x32) -->
+        <link rel="icon" href="https://aakashdinkarh.github.io/static_assets/images/portfolio/site-icon/site-icon-32.png" sizes="32x32" type="image/png">
+        <link rel="icon" href="https://aakashdinkarh.github.io/static_assets/images/portfolio/site-icon/site-icon-16.png" sizes="16x16" type="image/png">
+        <!-- Favicon for high-resolution desktop displays (64x64) -->
+        <link rel="icon" href="https://aakashdinkarh.github.io/static_assets/images/portfolio/site-icon/site-icon-64.png" sizes="64x64" type="image/png">
+        <!-- Apple Touch Icons for iOS -->
+        <link rel="apple-touch-icon" href="https://aakashdinkarh.github.io/static_assets/images/portfolio/site-icon/site-icon-180.png">
+        <link rel="apple-touch-icon" href="https://aakashdinkarh.github.io/static_assets/images/portfolio/site-icon/site-icon-152.png">
+        <link rel="apple-touch-icon" href="https://aakashdinkarh.github.io/static_assets/images/portfolio/site-icon/site-icon-120.png">
+        <link rel="apple-touch-icon" href="https://aakashdinkarh.github.io/static_assets/images/portfolio/site-icon/site-icon-76.png">
+        <link rel="apple-touch-icon" href="https://aakashdinkarh.github.io/static_assets/images/portfolio/site-icon/site-icon.ico">
+        <!-- Favicon for Android devices -->
+        <link rel="icon" href="https://aakashdinkarh.github.io/static_assets/images/portfolio/site-icon/site-icon-192.png" sizes="192x192" type="image/png">
+        <!-- Favicon for Windows tiles (optional) -->
+        <meta name="msapplication-TileImage" content="https://aakashdinkarh.github.io/static_assets/images/portfolio/site-icon/site-icon-144.png">
+        
+        <!-- Shortcut icon for backward compatibility with older browsers -->
+        <link rel="shortcut icon" href="https://aakashdinkarh.github.io/static_assets/images/portfolio/site-icon/site-icon.ico" type="image/x-icon">
+        <!-- Mask icon for Safari Pinned Tab (can be in SVG format, for better scaling) -->
+        <link rel="mask-icon" href="https://aakashdinkarh.github.io/static_assets/images/portfolio/site-icon/site-icon-32.png">
+        
+        <meta name="baseCDNUrl" content="https://aakashdinkarh.github.io/static_assets">
+        
+        <meta property="og:title" content="Calculator - Aakash Dinkar" />
+        <meta property="og:description" content="A simple and intuitive calculator built with HTML, CSS, and JavaScript. Perform basic arithmetic operations easily and efficiently." />
+        <meta property="og:url" content="https://aakashdinkar.in/calculator/" />
+        <meta property="og:image" content="https://aakashdinkarh.github.io/static_assets/images/portfolio/avif-images/meta-og-image.avif" />
+        <meta property="og:image" content="https://aakashdinkarh.github.io/static_assets/images/portfolio/webp-images/meta-og-image.webp" />
+        <meta property="og:image" content="https://aakashdinkarh.github.io/static_assets/images/portfolio/original-images/meta-og-image.jpeg" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Calculator - Aakash Dinkar">
+        
+        <meta name="twitter:title" content="Calculator - Aakash Dinkar" />
+        <meta name="twitter:description" content="A simple and intuitive calculator built with HTML, CSS, and JavaScript. Perform basic arithmetic operations easily and efficiently." />
+        <meta name="twitter:image" content="https://aakashdinkarh.github.io/static_assets/images/portfolio/avif-images/meta-og-image.avif" />
+        <meta name="twitter:image" content="https://aakashdinkarh.github.io/static_assets/images/portfolio/webp-images/meta-og-image.webp" />
+        <meta name="twitter:image" content="https://aakashdinkarh.github.io/static_assets/images/portfolio/original-images/meta-og-image.jpeg" />
+        
+        <title>Calculator - Aakash Dinkar</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            .container, .clear-container, #input-display {
+                display: flex;
+                width: 100%;
+                max-width: 400px;
+                border: 5px solid rgb(0, 134, 250);
+            }
+            .clear-container {
+                border-bottom: none;
+            }
+            .col {
+                flex: 25%;
+                display: flex;
+                flex-direction: column;
+            }
+            button {
+                height: 60px;
+                width: 100%;
+                border: 1px solid black;
+                background-color: rgb(213, 212, 212);
+                opacity: 0.8;
+                font-size: x-large;
+            }
+            button:hover {
+                opacity: 1;
+            }
+            input {
+                width: 100%;
+                max-width: 400px;
+                border: 5px double rgb(0, 134, 250);
+                padding: 10px 10px;
+                font-size: large;
+                text-align: right;
+            }
+            .operator {
+                background-color: rgb(255, 98, 0);
+                color: white;
+            }
+            #input-display {
+                display: block;
+                border-bottom: none;
+                height: 40px;
+                text-align: right;
+                font-size: large;
+                line-height: 15px;
+                padding: 10px 5px;
+            }
+            .clearBtn {
+                background-color: rgb(255, 70, 133);
+                color: white;
+            }
+            .answer {
+                background-color: green;
+                color: white;
+            }
 
+        </style>
+    </head>
+    <body>
+        <div id="input-display"></div>
+        <input type="hidden" id="input">
+
+        <div class="clear-container">
+            <button class="clearBtn" onclick="empty()">C</button>
+            <button class="clearBtn"onclick="backspcae()">&larr;</button>
+        </div>
+        <div class="container">
+            <div class="col">
+                <button class="btn" onclick="toInput('1')">1</button>
+                <button class="btn" onclick="toInput('4')">4</button>
+                <button class="btn" onclick="toInput('7')">7</button>
+                <button class="btn" onclick="toInput('.')">.</button>
+            </div>
+            <div class="col">
+                <button class="btn" onclick="toInput('2')">2</button>
+                <button class="btn" onclick="toInput('5')">5</button>
+                <button class="btn" onclick="toInput('8')">8</button>
+                <button class="btn" onclick="toInput('0')">0</button>
+            </div>
+            <div class="col">
+                <button class="btn" onclick="toInput('3')">3</button>
+                <button class="btn" onclick="toInput('6')">6</button>
+                <button class="btn" onclick="toInput('9')">9</button>
+                <button class="btn answer" onclick="calculate()">=</button>
+            </div>
+            <div class="col">
+                <button class="btn operator" onclick="operation('+')">+</button>
+                <button class="btn operator" onclick="operation('-')">-</button>
+                <button class="btn operator" onclick="operation('*')">*</button>
+                <button class="btn operator" onclick="operation('/')">/</button>
+            </div>
+        </div>
+
+        <script>
+            var input_display = document.getElementById("input-display");
+            var inputBox = document.getElementById("input");
+            var value1, value2, operator;
+            function toInput(input_value) {
+                inputBox.value += input_value;
+                input_display.innerHTML = inputBox.value;
+            }
+            function operation(real_operator) {
+                operator = real_operator;
+                value1 = inputBox.value;
+                inputBox.value += operator;
+                input_display.innerHTML = inputBox.value;
+            }
+            function empty() {
+                inputBox.value = "";
+                input_display.innerHTML = inputBox.value;
+            }
+            function backspcae() {
+                let x = inputBox.value;
+                let y = x.substring(0, x.length-1);
+
+                inputBox.value = y;
+                input_display.innerHTML = inputBox.value;
+            }
+            function calculate() {
+                let temp = inputBox.value;
+                value2 = temp.substring(value1.length + 1);
+                
+                let valueFirst = parseFloat(value1);
+                let valueSecond = parseFloat(value2);
+
+                if( operator == '-' )
+                inputBox.value = valueFirst - valueSecond;
+                if(operator == '+')
+                inputBox.value = valueFirst + valueSecond;
+                if(operator == '*')
+                inputBox.value = valueFirst * valueSecond;
+                if( operator == '/')
+                inputBox.value = valueFirst / valueSecond;
+                input_display.innerHTML = inputBox.value;
+            }
+            console.log('asdf');
+        </script>
+    </body>
+</html>
